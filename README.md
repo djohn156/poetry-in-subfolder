@@ -12,7 +12,7 @@ jobs:
   steps:
     ...
     - name: Setup Poetry Poetry
-      uses: djohn156/poetry-in-subfolder@main
+      uses: djohn156/poetry-in-subfolder@v1
       with:
         path: path/to/python/project
     ...
