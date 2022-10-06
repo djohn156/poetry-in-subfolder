@@ -7,14 +7,14 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: Install Poetry
-      uses: snok/install-poetry@v1
-      with:
-        virtualenvs-in-project: true
     - name: Set up python
       uses: actions/setup-python@v4
       with:
         python-version: 3.9
+    - name: Install Poetry
+      uses: snok/install-poetry@v1
+      with:
+        virtualenvs-in-project: true
     - name: Check poetry cache
       uses: actions/cache@v3
       id: cached-poetry-dependencies
